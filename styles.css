@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#chart {
+    margin-top: 20px;
+}
+
+.bar {
+    fill: darkblue;
+}
+
+.bar:hover {
+    fill: red;
+}
+
+.x-axis path,
+.x-axis line,
+.y-axis path,
+.y-axis line {
+    shape-rendering: crispEdges;
+}
+
+.label {
+    font-size: 12px;
+    fill: #333;
+}
+
+#state-select {
+    margin-bottom: 20px;
+    padding: 5px;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crime Data Visualization</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        button {
+            font-size: 16px;
+            padding: 10px 20px;
+            color: white;
+            background-color: steelblue;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+        }
+        button:hover {
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Federal Crime Statistics by State Interactive Slideshow</h1>
+
+    <p>-- From using data from a Federal Bureau Dataset, it is evident that Property Crime is of extremely high rates among all States of The US.</p>
+    <p>-- Theft is also a major problem among all States of the US. It is more than double the rates of any other statistics.</p>
+
+    <select id="state-select">
+        <!-- Options will be populated dynamically -->
+    </select>
+    <div id="chart"></div>
+    <button id="next-page-btn">Go to Next Page</button>
+    <button id="cover-page-btn">Back to Cover Page</button>
+
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('next-page-btn').addEventListener('click', function() {
+            window.location.href = 'next-page.html';
+        });
+
+        document.getElementById('cover-page-btn').addEventListener('click', function() {
+            window.location.href = 'cover.html';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crime Data Visualization - Scatterplot</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .legend {
+            font-size: 12px;
+            text-anchor: start;
+        }
+        .legend rect {
+            stroke-width: 1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Scatterplot of Population vs Murder Rate</h1>
+    <p>This scatterplot visualizes the relationship between the population size and the murder rate across various states of the United States.
+         Each point on the plot represents a state, with its position indicating the population and the murder rate. 
+         The color coding corresponds to different geographic regions, providing insight into regional variations in crime rates.
+          Use this visualization to explore how population size may correlate with murder rates and to compare data across states.</p>
+    <div id="scatterplot"></div>
+    <div id="legend"></div>
+    <button id="back-btn">Back</button>
+    <button id="line-chart-btn">Go to Line Chart Page</button>
+
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="scatterplot.js"></script>
+    <script>
+        document.getElementById('back-btn').addEventListener('click', function() {
+            window.location.href = 'index.html';
+        });
+
+        document.getElementById('line-chart-btn').addEventListener('click', function() {
+            window.location.href = 'next-page2.html';
+        });
+    </script>
+</body>
+</html>
